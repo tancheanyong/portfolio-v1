@@ -1,0 +1,107 @@
+@import '../presets.scss';
+.frontpage{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $primary-color;
+    transition: 0.4s ease;
+    position: relative;
+    .logo{
+        font-size: 7em;
+        color: orange;
+    }
+    h1{
+        font-size: 2em;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 1.8em;
+        font-weight: 300;
+        margin: 20px;
+        font-family: 'Roboto Mono', monospace;
+    }
+}
+
+.frontpage-buttons{
+    margin-top: 50px;
+    .frontpage-button{
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 20px;
+        border-radius: 3px;
+        color: black;
+        font-weight: 400;
+        display: inline-block;
+    }
+    .front-linkedin{
+        background-color: orange;
+        transition: 0.4s ease;
+        &:hover{
+            background-color: rgb(255, 189, 66);
+        }
+    }
+    .front-resume{
+        border: 2px solid orange;
+        transition: 0.4s ease;
+        &:hover{
+            background-color: orange;
+            border: 2px solid orange;
+        }
+    }
+    
+}
+//  Night mode Toggle   //
+.toggle{
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+    p{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.2em;
+        color: orange;
+    }
+}
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px; 
+    left: 2px;
+    transition:  all 0.5s;
+    
+}
+.checkbox:checked + .toggle::after {
+    left : 42px; 
+}
+.checkbox { 
+    display : none;
+}
+
+// NightMode    //
+.frontpage-dark{
+    background-color: $night-1;
+    color: white;
+    .logo{
+        color: black;
+    }
+    .frontpage-buttons{
+        .front-resume{
+            color: white;
+        }
+    }
+}

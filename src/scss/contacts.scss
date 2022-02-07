@@ -1,0 +1,50 @@
+@import '../presets.scss';
+
+.contacts{
+    background-color: $primary-color;
+    h2{
+        font-weight: 400;
+    }
+}
+.contacts-content{
+    margin: 50px 0 50px 0;
+    .contacts-cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-display{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .contacts-link{
+            font-size: 1.1em;
+            font-family: 'Roboto Mono', monospace;
+        }
+    }
+}
+.contacts-icon{
+    font-size: 3em;
+    margin: 0 10px;
+    transition: 0.4s ease;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        color: rgb(255, 187, 0);
+    }
+}
+
+//  Night mode  //
+.contacts-dark{
+    background-color: $night-1;
+    color: white;
+    .contacts-icon-dark{
+        color: white;
+        &:hover{
+            transform: scale(1.1);
+            color: rgb(255, 187, 0);
+        }
+    }
+}

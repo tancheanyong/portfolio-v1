@@ -1,0 +1,140 @@
+@import '../presets.scss';
+
+@keyframes fadeIn{
+    from {transform: translateY(50%); opacity: 0;}
+    to   {transform: translateY(0); opacity: 1;}
+}
+
+.hide{
+    visibility: hidden;
+}
+.project{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .project-container{
+        position: relative;
+        background-color: white;
+        width: 800px;
+        height: 90vh;
+        padding: 50px 100px 50px 100px;
+        border-radius: 5px;
+        animation: fadeIn 0.4s ease;
+    }
+}
+.close-button{
+    background: none;
+    border:none;
+    font-size: 2em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.project-window{
+    width: 100%;
+    height: 70%;
+    padding: 30px 5px 5px 5px;
+    background-color: $primary-color;
+    overflow: hidden;
+    position: relative;
+    .project-card-deco{
+        position: absolute;
+        top: 10px;
+        display: flex;
+        .dot{
+            width: 10px;
+            height: 10px;
+            opacity: 0.7;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .red-dot{
+            background-color: red;
+        }
+        .yel-dot{
+            background-color: yellow;
+        }
+        .green-dot{
+            background-color: green;
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.project-info{
+    height: 20%;
+    h3{
+        font-weight: 500;
+        margin:20px 0 10px 0;
+    }
+    p{
+        font-size: 0.8em;
+        text-align: justify;
+    }
+}
+.project-bottom{
+    height: 10%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.project-frameworks{
+    span{
+        font-size: 2em;
+        margin-right: 5px;
+    }
+}
+.project-links{
+    font-size: 2em;
+    a{
+        text-decoration: none;
+        color: black;
+        margin-left:5px;
+        &:hover{
+            color: orange;
+        }
+    }
+}
+
+//  night mode  //
+.project .project-dark{
+    background-color: $night-2;
+    color: white;
+    .window-dark{
+        background-color: $night-4;
+    }
+    .links-dark{
+        a{
+            color: white;
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:800px){
+    .project .project-container{
+        width: 400px;
+        padding: 50px 20px 50px 20px;
+        .project-window{
+            height: 50%;
+        }
+        .project-info{
+            height: 40%;
+        }
+    }
+}
