@@ -14,7 +14,7 @@ export const projectsEdit = [{
   title: 'My Portfolio',
   img: require("./img/portfolio.jpg"),
   imgMobile: require("./img/portfoliomobile.jpg"),
-  desc: 'This portfolio is built using ReactJS on February 2022.',
+  desc: 'This portfolio is built using ReactJS on February 2022. The design is based on Dorota1997\'s react-frontend-dev-portfolio on Github.',
   frameworks: [<IoLogoJavascript />, <IoLogoSass />, <IoLogoReact />],
   github: 'https://github.com/tancheanyong/portfolio-v1',
   live: 'https://tancheanyong.github.io/portfolio-v1/'
