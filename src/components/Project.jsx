@@ -27,7 +27,8 @@ const Project = ({theme, projectNum, setprojectNum, projectList }) => {
           </div>
           <div className={theme?"project-links":'project-links links-dark'}>
             <a title="View Source Code" target='_blank' href={projectList[projectNum].github}><IoLogoGithub /></a>
-            <a title="View Live" target='_blank' href={projectList[projectNum].live}><IoCaretForwardCircleOutline /></a>
+            {projectList[projectNum].live? <a title="View Live" target='_blank' href={projectList[projectNum].live}><IoCaretForwardCircleOutline /></a>:null}
+            
           </div>
         </div>
 
