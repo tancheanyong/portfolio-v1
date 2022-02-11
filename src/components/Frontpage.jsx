@@ -1,14 +1,17 @@
+import ReactRotatingText from 'react-rotating-text';
 import {BsCodeSlash,BsMoonStarsFill,BsSunFill} from 'react-icons/bs';
 import '../scss/frontpage.scss';
+import { useState } from 'react';
 
 const Frontpage = ({theme,changeTheme}) => {
+  const typeText=['WEB DEVELOPER','FRONTEND DEVELOPER','REACTJS DEVELOPER'];
+
   return (
     <section className={theme? 'frontpage':'frontpage frontpage-dark'}>
       <div className="frontpage-content">
           <p className='logo'><BsCodeSlash /></p> 
           <h1>Tan Chean Yong</h1>
-          <h2>WEB DEVELOPER</h2>
-
+          <h2><ReactRotatingText items={typeText} /></h2>
           <input type="checkbox" id="checkbox" className='checkbox' onClick={changeTheme}/>
           <label className="toggle" htmlFor='checkbox'>
             <p>
