@@ -11,7 +11,7 @@ const Frontpage = ({theme,changeTheme}) => {
       <div className="frontpage-content">
           <p className='logo'><BsCodeSlash /></p> 
           <h1>Tan Chean Yong</h1>
-          <h2><ReactRotatingText items={typeText} /></h2>
+          <h2><ReactRotatingText items={typeText} typingInterval={100} /></h2>
           <input type="checkbox" id="checkbox" className='checkbox' onClick={changeTheme}/>
           <label className="toggle" htmlFor='checkbox'>
             <p>
