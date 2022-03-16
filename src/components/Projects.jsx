@@ -6,7 +6,7 @@ const Projects = ({ theme, setprojectNum, projectList }) => {
     <section className={theme ? 'projects container' : 'projects projects-dark container'}>
       <h2>PROJECTS</h2>
       <div className="project-cards">
-        {projectList.slice(1).map(project=>{
+        {projectList.slice(1).reverse().map(project=>{
           return (
             <button key={project.key} className="project-card" onClick={() => setprojectNum(project.key)}>
               <div className="img-div">
