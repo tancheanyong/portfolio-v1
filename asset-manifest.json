@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio-v1/static/css/main.b9195c8f.css",
-    "main.js": "/portfolio-v1/static/js/main.432f1a38.js",
+    "main.js": "/portfolio-v1/static/js/main.51041b06.js",
     "static/media/pfp.jpg": "/portfolio-v1/static/media/pfp.436ad19eaa030245cc26.jpg",
     "static/media/meditations.png": "/portfolio-v1/static/media/meditations.e7e717c45e7d6db56ff1.png",
+    "static/media/meditations2.png": "/portfolio-v1/static/media/meditations2.1b0d055185df488ae849.png",
     "static/media/meditations-mobile-front.png": "/portfolio-v1/static/media/meditations-mobile-front.1e00c9f3bfb5f32f02fe.png",
     "static/media/jenmay.jpg": "/portfolio-v1/static/media/jenmay.b3fdfd92700050c097b9.jpg",
+    "static/media/meditations2-mobile.jpg": "/portfolio-v1/static/media/meditations2-mobile.e70ec4828100426f6b54.jpg",
     "static/media/weatherjs.png": "/portfolio-v1/static/media/weatherjs.13f8dc24b01c37eacc59.png",
     "static/media/jenmaymobile.jpg": "/portfolio-v1/static/media/jenmaymobile.7e6485e6e2cae326a774.jpg",
     "static/media/weatherjsmobile.jpg": "/portfolio-v1/static/media/weatherjsmobile.850ad394d92630323648.jpg",
@@ -13,10 +15,10 @@
     "static/media/portfoliomobile.jpg": "/portfolio-v1/static/media/portfoliomobile.4dbd8f1d11bad6aae588.jpg",
     "index.html": "/portfolio-v1/index.html",
     "main.b9195c8f.css.map": "/portfolio-v1/static/css/main.b9195c8f.css.map",
-    "main.432f1a38.js.map": "/portfolio-v1/static/js/main.432f1a38.js.map"
+    "main.51041b06.js.map": "/portfolio-v1/static/js/main.51041b06.js.map"
   },
   "entrypoints": [
     "static/css/main.b9195c8f.css",
-    "static/js/main.432f1a38.js"
+    "static/js/main.51041b06.js"
   ]
 }
