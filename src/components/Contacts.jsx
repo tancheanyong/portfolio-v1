@@ -17,7 +17,7 @@ const Contacts = ({theme,contactLink,setContactLink}) => {
             setContactLink('Email Copied!')
             }}>
               <IoMail /></p>
-          <a className={theme?'contacts-icon':'contacts-icon contacts-icon-dark'} onMouseOver={()=>setContactLink('My Resume')} href="./documents/TanCheanYongResume.pdf" download><IoNewspaper /></a>
+          {/* <a className={theme?'contacts-icon':'contacts-icon contacts-icon-dark'} onMouseOver={()=>setContactLink('My Resume')} href="./documents/TanCheanYongResume.pdf" download><IoNewspaper /></a> */}
         </div>
         <div className="link-display" onMouseOver={()=>setContactLink(<RiGhostSmileLine />)}>
           <p className="contacts-link">{contactLink}</p>

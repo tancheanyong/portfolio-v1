@@ -22,7 +22,7 @@ const Frontpage = ({theme,changeTheme}) => {
       </div>
       <div className="frontpage-buttons">
         <a href="https://www.linkedin.com/in/tancheanyong/" target='_blank' className='frontpage-button front-linkedin'>LinkedIn</a>
-        <a href="./documents/TanCheanYongResume.pdf" download className='frontpage-button front-resume'>Resume</a>
+        {/* <a href="./documents/TanCheanYongResume.pdf" download className='frontpage-button front-resume'>Resume</a> */}
       </div>
     </section>
   );
